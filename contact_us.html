@@ -3,16 +3,17 @@
 	<head>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  <link rel="stylesheet" type="text/css" href="assets/home.css"> 
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	  <script src="assets/no_reload.js"></script>
 	</head>
 
 	<body id="contact_us">
-		<div id="header">
-		  <div class="navigation">
-		    <a href="home.html" class="navigation-item">Logo</a>
-		    <a href="about_us.html" class="navigation-item">About Us</a>
-		    <a href="#" class="navigation-item">Contact Us</a>
-		  </div>
+	  <div class="navigation">
+	    <a href="home.html" class="navigation-item" onclick="homeFunc(); return true;">Logo</a>
+	    <a href="about_us.html" class="navigation-item" onclick="aboutFunc(); return true;">About Us</a>
+	    <a href="#" class="navigation-item" onclick="contactFunc(); return true;">Contact Us</a>
+	  </div>
+		<div id="contact">
 		  <div id="top-image">
 					<img src="assets/images/contact_us.jpg" style="width:100%;min-height:350px;max-height:600px;">
 			</div>

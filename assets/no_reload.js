@@ -1,3 +1,23 @@
+function homeFunc(){
+	$('#about').addClass("hidden");
+	$('#contact').addClass("hidden");
+  $('#main').removeClass("hidden");
+}
+
+function aboutFunc(){
+	$('#main').addClass("hidden");
+	$('#contact').addClass("hidden");
+  $('#about').removeClass("hidden");
+}
+
+function contactFunc(){
+	$('#main').addClass("hidden");
+	$('#about').addClass("hidden");
+  $('#contact').removeClass("hidden");
+}
+
+
+
 // window.onload = function(){
 // var i1=document.getElementById("about-us");
 // var b1=document.getElementById("a1");
@@ -42,6 +62,6 @@
 // });
 
 
-$('#a2').click(function() {
-   $('.about_us').toggle();
-});
+// $('#a2').click(function() {
+//    $('.about_us').toggle();
+// });

@@ -3,16 +3,17 @@
 	<head>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  <link rel="stylesheet" type="text/css" href="assets/home.css"> 
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	  <script src="assets/no_reload.js"></script>
 	</head>
 
 	<body id="about_us">
-		<div class="header">
-			<div class="navigation">
-		    <a href="home.html" class="navigation-item">Logo</a>
-		    <a href="#" class="navigation-item">About Us</a>
-		    <a href="contact_us.html" class="navigation-item">Contact Us</a>
-			</div>
+		<div class="navigation">
+	    <a href="home.html" class="navigation-item" onclick="homeFunc(); return true;">Logo</a>
+	    <a href="#" class="navigation-item" onclick="aboutFunc(); return true;">About Us</a>
+	    <a href="contact_us.html" class="navigation-item" onclick="contactFunc(); return true;">Contact Us</a>
+		</div>
+		<div id="about">
 			<div id="top-image">
 					<img src="assets/images/about_us.jpg" style="width:100%;min-height:350px;max-height:600px;">
 			</div>
@@ -25,14 +26,14 @@
 	      To make it easier, we've narrowed down 5 creative elements you must have for designing an inspiring "About Us" page:</p>
 	      <br>
 			</div>
-			<footer id="footer">
-					<br>
-					<h3>Follow Us</h3>
-					<a href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-					<a href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-					<a href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-					<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-			</footer>
-	  </div>
+		</div>
+		<footer id="footer">
+				<br>
+				<h3>Follow Us</h3>
+				<a href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+				<a href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+				<a href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+				<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+		</footer>
 	</body>
 </html>
