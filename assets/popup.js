@@ -26,5 +26,17 @@ function login()
         form.style.display = "none";
     }
   }
-
 }
+
+$('document').ready(function(){
+  $('#modalForm').submit(function() {
+  	var username = document.getElementById('username').value;
+  	var display = document.getElementById('username1');
+    display.value= username;
+    return false;
+  });
+  var span = document.getElementsByClassName("close")[0];
+  span.onclick = function() {
+    form.style.display = "none";
+  }
+});
