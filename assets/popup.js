@@ -1,29 +1,24 @@
 function login()
 {
-	var form = document.getElementById('myModal');
-	var btn1 = document.getElementById("signup1");
+	var form2 = document.getElementById('myModal');
 	var btn2 = document.getElementById("signup2");
 	var btn3 = document.getElementById("signup3");
 	var span = document.getElementsByClassName("close")[0];
-	btn1.onclick = function() {
-    form.style.display = "block";
-  }
-
   btn2.onclick = function() {
-    form.style.display = "block";
+    form2.style.display = "block";
   }
 
   btn3.onclick = function() {
-    form.style.display = "block";
+    form2.style.display = "block";
   }
 
 	span.onclick = function() {
-    form.style.display = "none";
+    form2.style.display = "none";
   }
 
   window.onclick = function(event) {
-    if (event.target == form) {
-        form.style.display = "none";
+    if (event.target == form2) {
+        form2.style.display = "none";
     }
   }
 }
@@ -35,8 +30,13 @@ $('document').ready(function(){
     display.value= username;
     return false;
   });
-  var span = document.getElementsByClassName("close")[0];
-  span.onclick = function() {
-    form.style.display = "none";
+  var form1 = document.getElementById('myFormModal');
+  var btn1 = document.getElementById("signup1");
+  var span1 = document.getElementsByClassName("formclose")[0];
+  btn1.onclick = function() {
+    form1.style.display = "block";
+  }
+  span1.onclick = function() {
+    form1.style.display = "none";
   }
 });

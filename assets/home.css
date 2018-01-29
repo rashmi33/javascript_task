@@ -225,3 +225,17 @@ form {
     text-decoration: none;
     cursor: pointer;
 }
+
+.formclose {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.formclose:hover,
+.formclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
