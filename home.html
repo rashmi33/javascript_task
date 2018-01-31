@@ -13,11 +13,11 @@
 
 	<body id="homepage">
 	  <div class="navigation">
-	    <a href="#" class="navigation-item" onclick="homeFunc(); return true;">Logo</a>
-	    <a href="about_us.html" class="navigation-item" onclick="aboutFunc(); return true;">About Us</a>
-	    <a href="contact_us.html" class="navigation-item" onclick="contactFunc(); return true;">Contact Us</a>
+	    <a class="navigation-item" id= "mainLink">Logo</a>
+	    <a class="navigation-item" id= "aboutLink" >About Us</a>
+	    <a class="navigation-item" id= "contactLink">Contact Us</a>
 	  </div>
-		<div id="main" class="hidden">
+		<div id="main" >
 		  <div id="top-image">
 				<img src="assets/images/slider.jpg" style="width:100%;min-height:350px;max-height:600px;">
 			</div>
@@ -206,6 +206,55 @@
 					}
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrRnyWMtvbFJzvl957N0AIIVdf1MZJ5ZE&amp;callback=myMap"></script>
+			</div>
+		</div>
+		<div id="contact" style="display: none">
+		  <div id="top-image">
+					<img src="assets/images/contact_us.jpg" style="width:100%;min-height:350px;max-height:600px;">
+			</div>
+		  <div class="contact-us">
+				<div class="contact-align">
+					<br><br>
+					</i><h2>Contact Us</h2>
+					<h3>Address</h3>
+					<p>Please feel free to contact us below.</p>
+					<p><i class="fa fa-map-marker"></i> Udaipur, Rajasthan</p>
+					<p><i class="fa fa-phone"></i> +91 8764138321</p>
+					<p><i class="fa fa-envelope-o"></i> test@test.com</p>
+				</div>
+				<div class="form-hw contact-align">
+					<form id="contact-us-form" target="_blank" >
+						<div>
+							<label>Name</label>
+							<input type="text" name="name" class="textbox" required>
+						</div>
+						<div>
+							<label>Email</label>
+							<input type="text" name="email" class="textbox" required>
+						</div>
+						<div>
+							<label>Message</label>
+							<input type="text" name="message" class="textbox" required>
+						</div>
+						<input type="checkbox" checked name="Like">
+						<label>I like it!!!</label>
+						<button type="submit" class="button-align">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="about" style="display: none">
+			<div id="top-image">
+					<img src="assets/images/about_us.jpg" style="width:100%;min-height:350px;max-height:600px;">
+			</div>
+			<div class="about-text">
+				<br>
+				<h2>About Us</h2>
+				<p>Even though inbound marketing is not a relatively new concept, it is certainly being executed in a number of new ways. People often associate content marketing with blog posts and social outreach. However, restricting content to those parameters can lead to many overlooked opportunities. You want to make sure that your business doesn’t miss out on a chance to generate creative and engaging content throughout alternative sections of your website.</p>
+				<p>It is important to consider the marketing potential that lies within the content of your website’s "About Us” page. As one of the most visited locations on any given company’s site, the "About Us" page plays a large role in the first impression that you leave on a potential customer. This is where they come to learn more about your company and the people behind the brand. A customer looks here before they start to take your business (or the idea of collaborating with it) seriously.</p>
+	      <p>Clearly "About Us" pages are important! That's why, as we’ve mentioned in previous content marketing articles, you need to make sure the information on this page tells a compelling story.
+	      To make it easier, we've narrowed down 5 creative elements you must have for designing an inspiring "About Us" page:</p>
+	      <br>
 			</div>
 		</div>
 		<footer id="footer">

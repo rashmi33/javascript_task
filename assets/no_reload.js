@@ -1,17 +1,28 @@
-function homeFunc(){
-	$('#about').addClass("hidden");
-	$('#contact').addClass("hidden");
-  $('#main').removeClass("hidden");
-}
+$('document').ready(function(){
+  $('#mainLink').click(function(){
+	  var main = document.getElementById("main");
+		var about = document.getElementById("about");
+		var contact = document.getElementById("contact");
+		main.style.display = "block";
+		contact.style.display = "none";
+		about.style.display = "none";
+	});
 
-function aboutFunc(){
-	$('#main').addClass("hidden");
-	$('#contact').addClass("hidden");
-  $('#about').removeClass("hidden");
-}
-
-function contactFunc(){
-	$('#main').addClass("hidden");
-	$('#about').addClass("hidden");
-  $('#contact').removeClass("hidden");
-}
+	$('#aboutLink').click(function(){
+	  var main = document.getElementById("main");
+		var about = document.getElementById("about");
+		var contact = document.getElementById("contact");
+		main.style.display = "none";
+		contact.style.display = "none";
+		about.style.display = "block";
+	});
+  
+  $('#contactLink').click(function(){
+		var main = document.getElementById("main");
+		var about = document.getElementById("about");
+		var contact = document.getElementById("contact");
+		main.style.display = "none";
+		contact.style.display = "block";
+		about.style.display = "none";
+  });
+});
